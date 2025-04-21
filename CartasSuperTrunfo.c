@@ -8,8 +8,8 @@
 
 int main() {
     printf("desafio super trunfo!\n");
-    printf("novo commit!\n");
-    printf("=====CARTA 01======!\n");
+    printf("novo commit!\n\n");
+    printf("=====CARTA 01======!\n\n");
 
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
@@ -41,15 +41,17 @@ int main() {
      // Calcular densidade populacional
      densidade = populacao / area;
 
-     printf("Densidade populacional: %.2f hab/km²\n", densidade);
+     printf("==> Densidade populacional: %.2f hab/km² <==\n\n", densidade);
 
      // Calcular Pib Per Capita
      pib_per_capita = pib/populacao ;
 
-     printf("Pib Per Capita: %.2f \n", pib_per_capita);
+     printf("==> Pib Per Capita: %.2f  <==\n\n", pib_per_capita);
+
+     printf("=================================\n\n");
      
 
-    printf("=====carta 02=======\n");
+    printf("=====carta 02=======\n\n");
 
     printf("qual o seu estado: \n");
     scanf("%s", &estado);
@@ -70,12 +72,13 @@ int main() {
     // Calcular densidade populacional
     densidade = populacao / area;
 
-    printf("Densidade populacional: %.2f hab/km²\n", densidade);
+    printf("==> Densidade populacional: %.2f hab/km² <==\n\n ", densidade);
 
     // Calcular Pib Per Capita
     pib_per_capita = pib/populacao ;
 
-    printf("Pib Per Capita: %.2f \n", pib_per_capita);
+    printf("==> Pib Per Capita: %.2f <==\n\n", pib_per_capita);
+    printf("==============================\n");
     
     
 
