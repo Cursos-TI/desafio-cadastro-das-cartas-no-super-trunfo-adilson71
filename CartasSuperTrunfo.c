@@ -130,6 +130,7 @@ int main() {
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
     // comparacao das duas cartas 
+    
     // criando opcao com switch
     // criando menu com switch
 
@@ -165,7 +166,7 @@ int main() {
                if (area1 > area2){
                 printf("A (%s) ganhou com maior Area!\n", &cidade1);  
              }else if (area1 < area2){
-                printf("A (%s) ganhou com maior Populacao!\n", &cidade2);  
+                printf("A (%s) ganhou com maior Area!\n", &cidade2);  
             }else {
                 printf("AS CARTAS TEM O MESMO VALOR E POR ISSO DEU EMPATE!\n");
                 printf("==================================================\n");
@@ -175,7 +176,7 @@ int main() {
             if (pib_per_capita1 > pib_per_capita2){
                 printf("A (%s) ganhou com maior Pib_per_capita!\n", &cidade1);  
             }else if (pib_per_capita1 < pib_per_capita2){
-                printf("A (%s) ganhou com maior Populacao!\n", &cidade2);  
+                printf("A (%s) ganhou com maior Pib_per_capita!\n", &cidade2);  
             }else {
                 printf("AS CARTAS TEM O MESMO VALOR E POR ISSO DEU EMPATE!\n");
                 printf("==================================================\n");
@@ -185,7 +186,7 @@ int main() {
             if (pib1 > pib2){
                 printf("A (%s)ganhou com maior Pib!\n", &cidade1);  
             }else if (pib1 < pib2){
-                printf("A (%s) ganhou com maior Populacao!\n", &cidade2);  
+                printf("A (%s) ganhou com maior Pib!\n", &cidade2);  
             }else {
                 printf("AS CARTAS TEM O MESMO VALOR E POR ISSO DEU EMPATE!\n");
                 printf("==================================================\n");
@@ -195,7 +196,7 @@ int main() {
             if  (densidade1 < densidade2){
                 printf("A (%s) ganhou com menor Densidade Populacional!\n", &cidade1);  
             }else if (densidade1 > densidade2){
-                printf("A (%s) ganhou com maior Populacao!\n", &cidade2);  
+                printf("A (%s) ganhou com maior Densidade Populacional!\n", &cidade2);  
             }else {
                 printf("AS CARTAS TEM O MESMO VALOR E POR ISSO DEU EMPATE!\n");
                 printf("==================================================\n");
@@ -205,7 +206,7 @@ int main() {
             if (pontosturisticos1 > pontosturisticos2){
                 printf("A (%s) ganhou com maior Ponto turisco!\n", &cidade1);  
             }else if (pontosturisticos1 < pontosturisticos2){
-                printf("A (%s) ganhou com maior Populacao!\n", &cidade2);  
+                printf("A (%s) ganhou com maior Ponto turisco!\n", &cidade2);  
             }else {
                 printf("AS CARTAS TEM O MESMO VALOR E POR ISSO DEU EMPATE!\n");
                 printf("==================================================\n");
