@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 // Desafio Super Trunfo - Países
 // Tema 1 - Cadastro das Cartas
@@ -15,13 +16,13 @@ int main() {
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
     
     // Dados da carta 1
-    char cidade1[50], estado1[3], codigo1[20];
-    int populacao1, turisticos1;
+    char cidade1[50], estado1[20], codigo1[20];
+    int populacao1, pontosturisticos1;
     float area1, pib1, densidade1, pib_per_capita1;
 
     // Dados da carta 2
-    char cidade2[50], estado2[3], codigo2[20];
-    int populacao2, turisticos2;
+    char cidade2[50], estado2[20], codigo2[20];
+    int populacao2, pontosturisticos2;
     float area2, pib2, densidade2, pib_per_capita2;
 
     // Cadastro das Cartas:
@@ -41,7 +42,7 @@ int main() {
     printf("qual o pib: \n");
     scanf("%f", &pib1);
     printf("numeros de pontos turisticos!\n");
-    scanf("%d", &turisticos1);
+    scanf("%d", &pontosturisticos1);
 
      // Calcular densidade populacional
      densidade1 = populacao1 / area1;
@@ -71,7 +72,7 @@ int main() {
     printf("Pib: \n");
     scanf("%f", &pib2);
     printf("Numeros de Pontos Turisticos:\n");
-    scanf("%d", &turisticos2);
+    scanf("%d", &pontosturisticos2);
 
 
     // Calcular densidade populacional
@@ -83,7 +84,7 @@ int main() {
     pib_per_capita2 = pib2/populacao2 ;
     printf("==> Pib Per Capita: %.2f <==\n\n", pib_per_capita2);
 
-
+    /*
     // comparação do resultado de menor densidade populacional
 
     printf("=================================================================================\n\n");
@@ -99,10 +100,12 @@ int main() {
     } else if (densidade2 < densidade1) {
         printf("Resultado: (%s) Venceu por ter a menor Densidade Populacional!\n\n", estado2);
     }
-    printf("=================================================================================\n\n");
+    */
 
-    // comparacao das duas cartas (atributo população)
-    
+    printf("=================================================================================\n\n");
+    /*
+
+    // comparacao das duas cartas 
 
     printf("====================================================================\n");
 
@@ -120,11 +123,107 @@ int main() {
         printf("Resultado: (%s) venceu por ter a maior populacao!\n\n", estado2);
     }
     printf("===================================================================\n\n");
+    */
       
 
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    // comparacao das duas cartas 
+    // criando opcao com switch
+    // criando menu com switch
+
+    printf("desafio super trunfo!\n");
+    printf("novo commit!\n\n");
+    printf("Menu Principal\n");
+    printf("1. Populacao\n");
+    printf("2. Area\n");
+    printf("3. pib_per_capita\n");
+    printf("4. Pib\n ");
+    printf("5. Densidade Populacional\n");
+    printf("6. Pontos Turisticos\n");
+    printf("7. Explicacao do jogo\n");
+    printf("8. sair do jogo\n");
+    printf("========================================================\n");
+    printf("Escolha uma Opcao para comparacao: ");
+    scanf("%d", &opcao);
+    printf("========================================================\n");
+
+
+    switch(opcao){
+        case 1:
+            if (populacao1 > populacao2){
+                printf("A (%s) ganhou com maior Populacao!\n", &cidade1);  
+            } else if (populacao1 < populacao2){
+                printf("A (%s) ganhou com maior Populacao!\n", &cidade2);  
+            }else {
+                printf("AS CARTAS TEM O MESMO VALOR E POR ISSO DEU EMPATE!\n");
+                printf("==================================================\n");
+             }
+             break;
+            case 2:
+               if (area1 > area2){
+                printf("A (%s) ganhou com maior Area!\n", &cidade1);  
+             }else if (area1 < area2){
+                printf("A (%s) ganhou com maior Populacao!\n", &cidade2);  
+            }else {
+                printf("AS CARTAS TEM O MESMO VALOR E POR ISSO DEU EMPATE!\n");
+                printf("==================================================\n");
+             }
+            break;
+            case 3:
+            if (pib_per_capita1 > pib_per_capita2){
+                printf("A (%s) ganhou com maior Pib_per_capita!\n", &cidade1);  
+            }else if (pib_per_capita1 < pib_per_capita2){
+                printf("A (%s) ganhou com maior Populacao!\n", &cidade2);  
+            }else {
+                printf("AS CARTAS TEM O MESMO VALOR E POR ISSO DEU EMPATE!\n");
+                printf("==================================================\n");
+             }
+            break;   
+            case 4:
+            if (pib1 > pib2){
+                printf("A (%s)ganhou com maior Pib!\n", &cidade1);  
+            }else if (pib1 < pib2){
+                printf("A (%s) ganhou com maior Populacao!\n", &cidade2);  
+            }else {
+                printf("AS CARTAS TEM O MESMO VALOR E POR ISSO DEU EMPATE!\n");
+                printf("==================================================\n");
+             } 
+            break;  
+            case 5:
+            if  (densidade1 < densidade2){
+                printf("A (%s) ganhou com menor Densidade Populacional!\n", &cidade1);  
+            }else if (densidade1 > densidade2){
+                printf("A (%s) ganhou com maior Populacao!\n", &cidade2);  
+            }else {
+                printf("AS CARTAS TEM O MESMO VALOR E POR ISSO DEU EMPATE!\n");
+                printf("==================================================\n");
+             }
+            break;
+            case 6:
+            if (pontosturisticos1 > pontosturisticos2){
+                printf("A (%s) ganhou com maior Ponto turisco!\n", &cidade1);  
+            }else if (pontosturisticos1 < pontosturisticos2){
+                printf("A (%s) ganhou com maior Populacao!\n", &cidade2);  
+            }else {
+                printf("AS CARTAS TEM O MESMO VALOR E POR ISSO DEU EMPATE!\n");
+                printf("==================================================\n");
+             }
+            break;
+        case 7:
+            printf("A explicacao do jogo!\n");
+            break;
+        case 8:
+            printf("Saindo do jogo!\n");
+            break;
+            default:
+            printf("Opcao Invalida!\n");
+            
+           
+            
+    }
+    
 
     return 0;
 }
